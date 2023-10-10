@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Tic Tac Toe</h1>
+      <button class="start" id="start-game">
+        START GAME
+        <i class="bi bi-play" style="font-size: 50px; padding: 0"></i>
+      </button>
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+      <div class="mid-game" id="mid-game">
+        <button class="exit" id="exit">
+          <i style="font-weight: bolder" class="bi bi-box-arrow-left"></i>
+        </button>
+        <button class="end" id="end">
+          <i class="bi bi-arrow-clockwise"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="w-message" id="winningMessage">
+      <div class="message-game">
+        <h1 id="message-game">The Winners is Player 1 !!!</h1>
+        <button class="end" id="end2">
+          <i class="bi bi-arrow-clockwise"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
